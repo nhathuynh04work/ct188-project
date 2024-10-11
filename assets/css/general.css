@@ -1,0 +1,106 @@
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: "Montserrat", sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: #333;
+}
+
+ul {
+	list-style: none;
+}
+
+.button {
+	display: inline-block;
+	border: solid 1px #999;
+	padding: 16px 30px;
+	border-radius: 999px;
+}
+
+.center-content {
+	width: 90vw;
+	margin: auto;
+}
+
+/* Header */
+
+header {
+	position: sticky;
+	top: 0px;
+	z-index: 1;
+	padding: 20px 0;
+	border-bottom: 1px solid #bbb;
+
+	background-color: #fff;
+}
+
+.header-content {
+	display: flex;
+	align-items: center;
+}
+
+.header-content .logo {
+	height: 40px;
+	margin-right: 30px;
+}
+
+.header-content .nav-list {
+	display: flex;
+}
+
+.header-content .nav-item {
+	font-size: 2rem;
+	margin-left: 28px;
+}
+
+.header-content .nav-item:hover {
+	text-decoration: underline;
+}
+
+.header-content .cta-group {
+	display: flex;
+	margin-left: auto;
+}
+
+.header-content .cta-group .button {
+	font-size: 2rem;
+	margin-left: 10px;
+}
+
+.header-content .cta-group .shopping-cart-button {
+	border: transparent;
+}
+
+.header-content .cta-group .signup-button {
+	background-color: #333;
+	color: #fff;
+	border: #333;
+}
+
+/* Footer */
+footer {
+	background-color: #222;
+}
+
+.footer-content {
+	color: white;
+	font-size: 1.4rem;
+	padding: 40px 0;
+	text-align: center;
+}
+
+.footer-content .button {
+	color: white;
+	font-size: 3.2rem;
+	border: 0;
+}
+
+.footer-content .address {
+	margin-top: 30px;
+	margin-bottom: 40px;
+}
