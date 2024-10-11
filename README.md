@@ -12,9 +12,11 @@
 3. Lưu ý khác
 - Cỡ chữ thì mọi người dùng đơn vị rem nha, ví dụ muốn cỡ chữ 18 thì để là font-size: 1.8 rem nha (lấy số mình muốn / 10)
 - Nội dung mỗi phần mọi người căn giữa dùm Nhật nha. Thêm class "center-content" vào trong cái div chứa nội dung. Nhật đã cài CSS cho class này rồi nên khi mọi người thêm vô là nó sẽ căn giữa nhe. Ví dụ Nhật đang làm header đi:
+```
 <header>
     <div class="center-content">
         Nội dung
     </div>
 </header> 
+```
 
