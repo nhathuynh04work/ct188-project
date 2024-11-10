@@ -11,7 +11,7 @@ header {
 }
 
 #navbarSupportedContent {
-    z-index: 5;
+	z-index: 5;
 }
 
 #navbarSupportedContent a:hover {
@@ -28,11 +28,11 @@ header {
 }
 
 #cart-quantity {
-    width: 18px;
-    height: 18px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	width: 18px;
+	height: 18px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	position: absolute;
 	top: 2px;
 	right: 5px;
@@ -44,8 +44,8 @@ header {
 #sign-in-btn,
 #sign-up-btn {
 	border: 1px solid black;
-    margin-left: 10px;
-    text-decoration: none !important;
+	margin-left: 10px;
+	text-decoration: none !important;
 }
 
 #sign-up-btn {
@@ -93,4 +93,383 @@ header {
 	.offcanvas {
 		width: 40vw !important;
 	}
+}
+
+/* ========================== Trang chủ ========================= */
+.index_main {
+	margin-top: 2rem;
+}
+.index_main_slogan {
+	font-weight: 700;
+	margin-bottom: 1rem;
+}
+.index_main_text_slogan1 {
+	padding: 0 0.2rem;
+	background-color: green;
+	color: white;
+}
+
+.index_main_text_tagline {
+	margin: 2rem 0;
+	line-height: 1.6rem;
+}
+
+.index_main_text_check {
+	line-height: 1.2rem;
+	display: flex;
+	align-items: center;
+}
+
+.index_main_text_check::before {
+	color: rgb(32, 127, 5);
+	padding-right: 0.5rem;
+}
+
+.index_main_img img {
+	width: 100%;
+	height: 25rem;
+	margin-top: 1rem;
+	object-fit: contain;
+}
+
+/* Trending */
+.index_content {
+	padding: 2rem;
+}
+.index_trend img {
+	width: 100%;
+	height: 20rem;
+	margin: 1.2rem auto;
+	border-radius: 0.5rem;
+}
+
+#multiImageCarousel {
+	display: none;
+}
+@media screen and (min-width: 767px) {
+	.index_main_img img {
+		height: 38rem;
+		margin-top: 1rem;
+	}
+
+	/* Carousel */
+	#multiImageCarousel {
+		display: block;
+	}
+	.index_text {
+		text-align: center;
+	}
+	.index_carousel {
+		padding-top: 1.3rem;
+	}
+	.index_carousel_contain > img {
+		width: 100%;
+		height: 100%;
+		min-height: 24rem;
+		flex: 1 1 auto;
+		object-fit: cover;
+		margin: 1rem 0.1rem;
+		border: 0.1rem solid rgba(0, 0, 0, 0.419);
+	}
+}
+
+/* ========================== Giới thiệu ========================= */
+.top_introduce {
+	background-image: url(../img/gioithieu/background.avif);
+	background-size: cover;
+	background-position: center;
+}
+
+/* Slogan */
+.intro_tagline {
+	margin: 1.2rem 0;
+}
+.intro_btn a {
+	margin: 1rem;
+}
+
+/* Slogan 2 */
+.intro_slogan_2 {
+	background-image: url(../img/gioithieu/background2.jpg);
+	height: 20rem;
+	margin: 2rem 0;
+}
+.intro_slogan_2_logo {
+	font-size: 4rem;
+	font-weight: 700;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.intro_slogan_2_tagline {
+	font-size: 1.7rem;
+	font-weight: 300;
+	text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7);
+}
+/* Contact */
+.contact_text {
+	margin-bottom: 3rem;
+	font-size: 1.3rem;
+}
+.contact_btn {
+	margin: 1.5rem;
+}
+
+/* Main bottom */
+.title_bottom {
+	margin: 2rem 0;
+}
+
+.contact_logo img {
+	margin: 2.5rem 0.4rem;
+}
+
+@media screen and (min-width: 767px) {
+	.top_smallText {
+		border-left: 1px solid black;
+		padding-left: 10px;
+		font-size: 1.2rem;
+	}
+	.intro_main_1 {
+		gap: 20px;
+	}
+	.intro_main_2 p {
+		text-align: justify;
+	}
+	.intro_main_2 {
+		padding: 3px;
+	}
+
+	.title_bottom::before,
+	.title_bottom::after {
+		content: "";
+		flex: 1;
+		border-bottom: 1px solid #050000a0;
+		margin: 0 15px;
+	}
+}
+
+/* ========================== Sản phẩm ========================= */
+#search-bar {
+	top: 78px;
+	z-index: 5;
+}
+
+.products-grid {
+	margin-top: 86px;
+}
+
+.products-grid .row {
+	gap: 10px;
+}
+
+.products-grid .product-item {
+	position: relative;
+	width: calc(50% - 10px / 2);
+}
+
+.products-grid .product-overlay {
+	display: none;
+	position: absolute;
+	top: 0;
+	z-index: 1;
+}
+
+.product-item:hover .product-overlay {
+	display: flex;
+}
+
+@media screen and (min-width: 992px) {
+	.products-grid .product-item {
+		width: calc(25% - 10px * 3 / 4);
+	}
+}
+
+/* ========================== Chi tiết sản phẩm ========================= */
+#product-detail-block {
+    min-height: calc(100vh - 100px);
+}
+
+#product-name {
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+#quantity-input {
+    padding: 100px;
+}
+
+#add-to-cart-btn {
+    padding: 10px 15px;
+}
+
+/* ========================== Liện hệ ========================= */
+/* FORM LIÊN HỆ */
+#lienhe input[type="text"],
+#lienhe input[type="email"] {
+	border-radius: 10px;
+	box-sizing: border-box;
+}
+#lienhe input[type="submit"] {
+	width: 30%;
+	background-color: black;
+	color: white;
+	padding: 10px 15px;
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+}
+#lienhe input[type="submit"]:hover {
+	background-color: #ccc;
+}
+#lienhe .img-offset2 {
+	margin-top: 20px; /* Ảnh nằm lệt xuống */
+}
+/*Hiệu img1-lienhe */
+#lienhe .animate-top {
+	animation: img1-lienhe 3s ease-out forwards;
+}
+/* Keyframes cho hiệu ứng di chuyển từ trên xuống */
+@keyframes img1-lienhe {
+	from {
+		transform: translateY(-100px);
+		opacity: 0;
+	}
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+/*Hiệu ứng img2-lienhe*/
+#lienhe .animate-bottom {
+	animation: img2-lienhe 3s ease-out forwards;
+}
+/* Keyframes cho hiệu ứng di chuyển từ dưới lên */
+@keyframes img2-lienhe {
+	from {
+		transform: translateY(100px);
+		opacity: 0;
+	}
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+/*Hiệu ứng img3-lienhe*/
+#lienhe .animate-right {
+	animation: img3-lienhe 3s ease-out forwards;
+}
+/* Keyframes cho hiệu ứng di chuyển từ phải qua trái */
+@keyframes img3-lienhe {
+	from {
+		transform: translateX(100px);
+		opacity: 0;
+	}
+	to {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+/* Hiệu ứng ảnh fly */
+#lienhe .img-fly {
+	padding: 3px;
+	margin: 2px;
+	width: 100%;
+	animation: img-fly 3s ease-out forwards;
+}
+@keyframes img-fly {
+	from {
+		transform: translateX(-100px);
+		opacity: 0;
+	}
+	to {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+/* ========================== Giỏ hàng ========================= */
+
+/* ========================== Đăng ký ========================= */
+/* FORM ĐĂNG KÝ */
+#dangky input[type="text"],
+#dangky input[type="email"],
+#dangky input[type="password"],
+#dangky input[type="tel"] {
+	border-radius: 10px;
+	box-sizing: border-box;
+}
+#dangky input[type="submit"] {
+	width: 100%;
+	background-color: black;
+	color: white;
+	padding: 10px 15px;
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+}
+#dangky input[type="submit"]:hover {
+	background-color: #333;
+}
+/*Vị trí ảnh */
+.img-offset2 {
+	margin-top: 20px; /* Ảnh nằm lệt xuống */
+}
+/*Hiệu img1 */
+.animate-top {
+	animation: img1 3s ease-out forwards;
+}
+/* Keyframes cho hiệu ứng di chuyển từ trên xuống */
+@keyframes img1 {
+	from {
+		transform: translateY(-100px);
+		opacity: 0;
+	}
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+/*Hiệu ứng img2*/
+.animate-bottom {
+	animation: img2 3s ease-out forwards;
+}
+/* Keyframes cho hiệu ứng di chuyển từ dưới lên */
+@keyframes img2 {
+	from {
+		transform: translateY(100px);
+		opacity: 0;
+	}
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+/*Hiệu ứng img3*/
+.animate-right {
+	animation: img3 3s ease-out forwards;
+}
+/* Keyframes cho hiệu ứng di chuyển từ phải qua trái */
+@keyframes img3 {
+	from {
+		transform: translateX(100px);
+		opacity: 0;
+	}
+	to {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+/* ========================== Đăng nhập ========================= */
+.login-img {
+    height: 200px;
+}
+
+@media screen and (min-width: 992px) {
+    .login-img {
+        min-height: calc(100vh - 120px);
+    }
 }
